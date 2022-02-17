@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+.topBanner {
+  height: 610px;
+  background: #e8e8e8;
+}
+
+@media (max-width: 991.98px) {
+  .topBanner {
+    height: auto;
+  }
+}
+
+.topBannerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 610px;
+  background: url("../imgs/topHeaderBack.png") no-repeat;
+  background-size: 550px;
+  background-position: 93% 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .topBannerContent {
+    background-position: 100% 0%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .topBannerContent {
+    background: none;
+    height: auto;
+    padding: 5rem 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .topBannerContent {
+    padding: 2rem 0;
+  }
+}
+
+.topBannerText1 {
+  color: #222222;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .topBannerText1 {
+    font-size: 40px;
+  }
+}
+
+.topBannerText2 {
+  letter-spacing: 1px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  color: #222222;
+  padding-top: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .topBannerText2 {
+    font-size: 30px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .topBannerText2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.topBannerText2 span {
+  color: #f16d7f;
+}
+
+.bgText {
+  padding-left: 24px;
+  border-left: 12px solid #f16d7f;
+  line-height: 3rem;
+}
+
+@media (max-width: 991.98px) {
+  .bgText {
+    padding: 0;
+    border-left: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.bgText a {
+  text-decoration: none;
+}
+
+/*-------------------------------OFFER ST-----------------------------*/
+@media (max-width: 767.98px) {
+  .offers .col-6 {
+    padding: 0 10px 0 10px;
+  }
+}
+
+.offer {
+  position: relative;
+  width: inherit;
+}
+
+.offer a:first-child {
+  background: #ffffff;
+  position: absolute;
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .offer a:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    position: inherit;
+    outline: 1px solid #cccccc;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .offer a:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offer a:first-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.offer a:first-child div {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+}
+
+@media (max-width: 767.98px) {
+  .offer a:first-child div {
+    font-size: 14px;
+  }
+}
+
+.offer a:first-child div:last-child {
+  color: #f16d7f;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+}
+
+@media (max-width: 991.98px) {
+  .offer a:first-child div:last-child {
+    font-size: 18px;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .offer a:first-child div:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offer a:first-child div:last-child {
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .offer a:hover + a:last-child {
+    outline: 1px solid #f16d7f;
+  }
+}
+
+.offer a:last-child {
+  width: inherit;
+}
+
+@media (max-width: 991.98px) {
+  .offer a:last-child {
+    outline: 1px solid #cccccc;
+  }
+}
+
+@media (min-width: 992px) {
+  .offer a:last-child:hover {
+    outline: 1px solid #f16d7f;
+  }
+}
+
+.offer a:last-child img {
+  width: inherit;
+}
+
+/*-------------------------------OFFER End-----------------------------*/
+/*-------------------------------FETURED ST-----------------------------*/
+.feturedHeadTop {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.feturedHeadBottom {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  .feturedHeadBottom {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+.feturedButton {
+  background-color: #f16d7f;
+  color: #ffffff;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  border-left: 1px solid #f16d7f;
+}
+
+.feturedButton i {
+  padding-left: 0.5rem;
+}
+
+.feturedButton:hover {
+  background-color: #ffffff;
+  color: #f16d7f;
+}
+
+/*-------------------------------FETURED END-----------------------------*/
+/*-------------------------------OFFER FOR WOMEN ST-----------------------------*/
+.offerWomenLeft {
+  background: url("../imgs/offerForWomen.jpg");
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .offerWomenLeft {
+    background: none;
+    background-color: #222224;
+  }
+}
+
+.offerWomenLeft .offerWomenBannerText {
+  padding-top: 9rem;
+  padding-left: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .offerWomenLeft .offerWomenBannerText {
+    padding-top: 1rem;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.offerWomenLeft .offerWomenBannerText div {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 450px) {
+  .offerWomenLeft .offerWomenBannerText div {
+    font-size: 34px;
+  }
+}
+
+.offerWomenLeft .offerWomenBannerText div:last-child {
+  font-size: 32px;
+  letter-spacing: 0.9px;
+}
+
+@media (max-width: 450px) {
+  .offerWomenLeft .offerWomenBannerText div:last-child {
+    font-size: 24px;
+  }
+}
+
+.offerWomenLeft .offerWomenBannerText div span {
+  color: #f16d7f;
+  letter-spacing: 1.5px;
+}
+
+.offerWomenRight {
+  background-color: #222224;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+  .offerWomenRight .offerWomenDetail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.offerWomenRight .offerWomenDetail .offerWomenDetailUp {
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-top: 3rem;
+}
+
+@media (max-width: 992px) {
+  .offerWomenRight .offerWomenDetail .offerWomenDetailUp {
+    padding-top: 1rem;
+  }
+}
+
+.offerWomenRight .offerWomenDetail .offerWomenDetailBottom {
+  margin-top: 10px;
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  padding-right: 2rem;
+}
+
+@media (max-width: 992px) {
+  .offerWomenRight .offerWomenDetail .offerWomenDetailBottom {
+    padding: 0 11.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .offerWomenRight .offerWomenDetail .offerWomenDetailBottom {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offerWomenRight .offerWomenDetail .offerWomenDetailBottom {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .offerWomenRight .offerWomenDetail .offerWomenDetailBottom {
+    padding: 0 3rem;
+  }
+}
+
+.offerWomenRight img {
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 992px) {
+  .offerWomenRight img {
+    padding: 3rem 0 0 0;
+  }
+}
+
+/*-------------------------------OFFER FOR WOMEN END-----------------------------*/
+/*# sourceMappingURL=stylesIndex.css.map */

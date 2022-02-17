@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+/*-------------------------------SUBSCRIBE ST-----------------------------*/
+.subscribeBg {
+  background: url(../../assets/imgs/SubscribbeBG.jpg) no-repeat center center, #ccc;
+  background-blend-mode: overlay;
+  background-size: cover;
+  margin-top: 3rem;
+}
+
+@media (max-width: 400px) {
+  .subscribeReview {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 400px) {
+  .subscribeReview div:first-child {
+    margin-left: 33.333333%;
+  }
+}
+
+@media (max-width: 400px) {
+  .subscribeReview div:last-child {
+    margin-top: 1rem;
+    padding: 0 !important;
+  }
+}
+
+.reviewsTextMassage {
+  color: #222224;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  font-style: italic;
+}
+
+.reviewsTextName {
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 26px;
+}
+
+.reviewsTextSwitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+  .reviewsTextSwitch {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 400px) {
+  .reviewsTextSwitch {
+    margin: auto;
+  }
+}
+
+.reviewsTextSwitch div {
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+}
+
+.reviewsTextSwitch div:first-child {
+  margin-left: 0;
+}
+
+.reviewsTextSwitch div:last-child {
+  margin-top: 0;
+}
+
+.reviewsTextFrom {
+  color: #222224;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+}
+
+.subscribeEmailHead {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.subscribeForm input {
+  border: none;
+  outline: none;
+  padding: 0 28px;
+  font-weight: 700;
+  background-color: #e1e1e1;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  float: left;
+}
+
+.subscribeForm input:focus {
+  -webkit-box-shadow: 0 0 3px #f16d7f;
+          box-shadow: 0 0 3px #f16d7f;
+}
+
+.subscribeForm input::-webkit-input-placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subscribeForm input:-ms-input-placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subscribeForm input::-ms-input-placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subscribeForm input::placeholder {
+  opacity: 0.67;
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subscribeForm button {
+  background-color: #f16d7f;
+  color: #ffffff;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  border: none;
+  height: inherit;
+  padding: 0 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 370px) {
+  .subscribeForm button {
+    padding: 10px;
+  }
+}
+
+.subscribeForm button:hover {
+  background-color: #ccc;
+  color: #f16d7f;
+}
+
+.subscribeEmail .subscribeEmailText {
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  line-height: 24px;
+}
+
+@media (max-width: 992px) {
+  .subscribeEmail {
+    border-left: none !important;
+  }
+}
+
+/*-------------------------------SUBSCRIBE END-----------------------------*/
+/*# sourceMappingURL=subscribe.css.map */

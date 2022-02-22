@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        };
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="gallery">
+            <img id="main-pic" src="../src/assets/imgs/Fetured1.jpg" alt="" width="350" height="280">
+            <div class="roulette">
+                <button id='hide'>скрыть\показать</button>
+                <button id="left"> <<< </button>
+                <button id="right"> >>> </button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+
+        let carouselle = {
+            imges: [
+                '../src/assets/imgs/Fetured1.jpg', 
+                '../src/assets/imgs/Fetured2.jpg', 
+                '../src/assets/imgs/Fetured3.jpg',
+                '../src/assets/imgs/Fetured4.jpg',
+                '../src/assets/imgs/Fetured5.jpg',
+                '../src/assets/imgs/Fetured6.jpg'
+            ],
+            container: '.roulette', 
+            template(el) {
+                return `<img src = "${el}" width='100' height='80' class='img-preview'>`;
+            },
+        }    
+
+
+        function initNewApp(settings) {
+            const element = {
+                items: settings.imges, 
+                container: settings.container,
+                template: settings.template, 
+                init() {
+                    this._render();
+                    this._handleEvents();
+                },
+                _render() {
+                    let str = '';
+                    this.items.forEach(el => {
+                        str += this.template(el); 
+                    });
+                    document.querySelector(this.container).insertAdjacentHTML('afterbegin', str);
+                },
+                _handleEvents() {
+                    document.querySelector('.roulette').addEventListener('click', evt => {
+                        if (evt.target.classList.contains('img-preview')) {
+                            document.querySelector('#main-pic').src = evt.target.src;
+                        };
+                        if (evt.target.id == 'hide') {
+                            document.querySelector('#main-pic').classList.toggle('hidden');
+                        }
+                    })
+                }
+
+            }
+            element.init();
+            return element;
+        };
+
+        let newGallery = initNewApp(carouselle); 
+        
+    </script>
+</body>
+</html>
